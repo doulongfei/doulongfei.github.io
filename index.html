@@ -10,322 +10,455 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Microsoft YaHei', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333333;
+            background: #F8F8FF;
+            background-image:
+                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(106, 90, 205, 0.03) 35px, rgba(106, 90, 205, 0.03) 70px),
+                repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(106, 90, 205, 0.02) 35px, rgba(106, 90, 205, 0.02) 70px);
             min-height: 100vh;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         .header {
             text-align: center;
-            margin-bottom: 50px;
-            color: white;
+            margin-bottom: 36px;
+            padding: 40px 20px;
         }
-        
+
         .header h1 {
             font-size: 3rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 12px;
+            color: #6A5ACD;
+            font-weight: 700;
         }
-        
+
         .header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 18px;
+            color: #6A5ACD;
+            font-weight: 700;
+            letter-spacing: 0.5px;
         }
-        
+
         .repo-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
+            gap: 24px;
+            margin-bottom: 24px;
         }
-        
+
         .repo-card {
             background: white;
-            border-radius: 12px;
+            border-radius: 8px;
             padding: 25px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(106, 90, 205, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-left: 4px solid #667eea;
+            border-left: 3px solid #6A5ACD;
+            text-align: left;
         }
-        
+
         .repo-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(106, 90, 205, 0.15);
         }
-        
+
         .repo-name {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #333333;
+            margin-bottom: 12px;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: color 0.3s ease;
         }
-        
+
+        .repo-name:hover {
+            color: #6A5ACD;
+        }
+
+        .repo-name:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background: #6A5ACD;
+        }
+
         .repo-description {
-            color: #666;
-            margin-bottom: 15px;
-            font-size: 0.95rem;
+            color: #333333;
+            margin-bottom: 12px;
+            font-size: 14px;
+            line-height: 1.6;
+            text-indent: 2em;
         }
-        
+
         .repo-links {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
+            margin-top: 12px;
         }
-        
+
         .btn {
             padding: 8px 16px;
             border-radius: 6px;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 14px;
             font-weight: 500;
             transition: all 0.3s ease;
         }
-        
+
         .btn-primary {
-            background: #667eea;
+            background: #6A5ACD;
             color: white;
         }
-        
+
         .btn-primary:hover {
-            background: #5a67d8;
+            background: #5848B8;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(106, 90, 205, 0.25);
         }
-        
+
         .btn-secondary {
-            background: #e2e8f0;
-            color: #4a5568;
+            background: #E6E2FF;
+            color: #6A5ACD;
         }
-        
+
         .btn-secondary:hover {
-            background: #cbd5e0;
+            background: #D4CFFF;
+            transform: translateY(-1px);
         }
-        
+
         .tech-tag {
             display: inline-block;
-            background: #f7fafc;
-            color: #4a5568;
-            padding: 4px 8px;
+            background: #E6E2FF;
+            color: #6A5ACD;
+            padding: 4px 12px;
             border-radius: 4px;
-            font-size: 0.8rem;
-            margin: 2px;
-            border: 1px solid #e2e8f0;
+            font-size: 13px;
+            margin: 4px 4px 4px 0;
+            font-weight: 500;
         }
-        
+
         .footer {
             text-align: center;
-            color: white;
-            opacity: 0.8;
-            margin-top: 50px;
+            color: #666666;
+            margin-top: 48px;
+            padding: 24px;
+            border-top: 1px solid #E6E2FF;
         }
-        
+
+        .footer p {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #6A5ACD;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #5848B8;
+            text-decoration: underline;
+        }
+
         .stats {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 30px;
-            text-align: center;
-            color: white;
+            background: white;
+            border-radius: 8px;
+            padding: 0;
+            margin-bottom: 24px;
             cursor: pointer;
             transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(106, 90, 205, 0.1);
+            overflow: hidden;
         }
-        
+
         .stats:hover {
-            background: rgba(255,255,255,0.15);
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 20px rgba(106, 90, 205, 0.15);
         }
-        
+
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
         }
-        
-        .stat-item h3 {
-            font-size: 2rem;
-            margin-bottom: 5px;
-        }
-        
-        .stat-item p {
-            opacity: 0.8;
-        }
-        
-        .blog-section {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-            color: white;
+
+        .stat-item {
+            background: #E6E2FF;
+            padding: 24px;
             text-align: center;
+            border-right: 1px solid #D4CFFF;
         }
-        
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-item h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #6A5ACD;
+            margin-bottom: 8px;
+        }
+
+        .stat-item p {
+            color: #333333;
+            font-size: 14px;
+        }
+
+        .blog-section {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 24px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(106, 90, 205, 0.1);
+        }
+
         .blog-section h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            font-size: 18px;
+            font-weight: 700;
+            color: #6A5ACD;
+            margin-bottom: 12px;
         }
-        
+
         .blog-description {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            margin-bottom: 25px;
-            line-height: 1.8;
+            font-size: 14px;
+            color: #333333;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
-        
+
         .blog-link {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
-            backdrop-filter: blur(5px);
-            border: 2px solid rgba(255,255,255,0.3);
+            background: #6A5ACD;
             color: white;
             padding: 12px 30px;
-            border-radius: 25px;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 14px;
             transition: all 0.3s ease;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
-        
+
         .blog-link:hover {
-            background: rgba(255,255,255,0.3);
-            border-color: rgba(255,255,255,0.5);
+            background: #5848B8;
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 20px rgba(106, 90, 205, 0.25);
         }
-        
+
         .blog-features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
-            margin-top: 20px;
+            margin-top: 24px;
+            text-align: left;
         }
-        
+
         .blog-feature {
-            background: rgba(255,255,255,0.1);
-            padding: 15px;
+            background: #E6E2FF;
+            padding: 16px;
             border-radius: 8px;
-            border-left: 3px solid rgba(255,255,255,0.5);
+            border-left: 2px solid #6A5ACD;
         }
-        
+
         .blog-feature h4 {
             margin-bottom: 8px;
-            font-size: 1.1rem;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333333;
         }
-        
+
         .blog-feature p {
-            font-size: 0.9rem;
-            opacity: 0.8;
+            font-size: 14px;
+            color: #333333;
+            line-height: 1.6;
         }
-        
+
         .certificate-section {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
+            background: white;
+            border-radius: 8px;
             padding: 30px;
-            margin-bottom: 30px;
-            color: white;
+            margin-bottom: 24px;
             text-align: center;
+            box-shadow: 0 2px 8px rgba(106, 90, 205, 0.1);
         }
-        
+
         .certificate-section h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            font-size: 18px;
+            font-weight: 700;
+            color: #6A5ACD;
+            margin-bottom: 12px;
         }
-        
+
         .certificate-description {
-            font-size: 1rem;
-            opacity: 0.9;
-            margin-bottom: 25px;
+            font-size: 14px;
+            color: #333333;
+            margin-bottom: 24px;
         }
-        
+
         .certificate-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            gap: 24px;
+            margin-top: 24px;
         }
-        
+
         .certificate-card {
-            background: rgba(255,255,255,0.1);
-            border-radius: 12px;
-            padding: 20px;
-            border-left: 4px solid rgba(255,255,255,0.5);
+            background: #E6E2FF;
+            border-radius: 8px;
+            padding: 24px;
+            border: 1px solid #6A5ACD;
             transition: all 0.3s ease;
         }
-        
+
         .certificate-card:hover {
-            background: rgba(255,255,255,0.15);
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 20px rgba(106, 90, 205, 0.15);
+            border-color: #5848B8;
         }
-        
+
         .certificate-image {
             width: 100%;
             max-width: 250px;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            margin-bottom: 16px;
+            border: 1px solid #D4CFFF;
         }
-        
+
         .certificate-title {
-            font-size: 1.2rem;
+            font-size: 16px;
             font-weight: 600;
             margin-bottom: 8px;
+            color: #333333;
         }
-        
+
         .certificate-issuer {
-            font-size: 0.9rem;
-            opacity: 0.8;
-            margin-bottom: 5px;
+            font-size: 14px;
+            color: #333333;
+            margin-bottom: 4px;
         }
-        
+
         .certificate-date {
-            font-size: 0.85rem;
-            opacity: 0.7;
+            font-size: 13px;
+            color: #666666;
         }
-        
+
         .comments-section {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
+            background: white;
+            border-radius: 8px;
             padding: 30px;
-            margin-bottom: 30px;
-            color: white;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(106, 90, 205, 0.1);
         }
-        
+
         .comments-section h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #6A5ACD;
+            margin-bottom: 12px;
             text-align: center;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
-        
+
         .comments-description {
             text-align: center;
-            font-size: 1rem;
-            opacity: 0.9;
-            margin-bottom: 25px;
+            font-size: 14px;
+            color: #333333;
+            margin-bottom: 24px;
         }
-        
+
         #tcomment {
-            background: rgba(255,255,255,0.05);
+            background: #F8F8FF;
             border-radius: 8px;
             padding: 20px;
             min-height: 200px;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 2.2rem;
+            }
+
+            .header p {
+                font-size: 17px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-item {
+                border-right: none;
+                border-bottom: 1px solid #D4CFFF;
+            }
+
+            .stat-item:last-child {
+                border-bottom: none;
+            }
+
+            .stat-item h3 {
+                font-size: 24px;
+            }
+
+            .stat-item p {
+                font-size: 13px;
+            }
+
+            .blog-section h2,
+            .certificate-section h2,
+            .comments-section h2 {
+                font-size: 17px;
+            }
+
+            .blog-description,
+            .certificate-description,
+            .comments-description {
+                font-size: 13px;
+            }
+
+            .repo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .repo-card {
+                padding: 20px;
+            }
+
+            .repo-name {
+                font-size: 17px;
+            }
+
+            .repo-description {
+                font-size: 13px;
+            }
+
+            .blog-features {
+                grid-template-columns: 1fr;
+            }
+
+            .certificate-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
