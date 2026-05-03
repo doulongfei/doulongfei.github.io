@@ -1,6 +1,8 @@
 (function () {
   const canvas = document.getElementById("signalCanvas");
+  if (!canvas) return;
   const ctx = canvas.getContext("2d");
+  if (!ctx) return;
   const packets = [];
   const palette = ["#d8ff3e", "#4ef4ff", "#ff6f61", "#ffb238", "#9f7cff"];
   let width = 0;
@@ -108,13 +110,14 @@
     });
   });
 
-  const navLinks = document.querySelectorAll(".site-nav a");
-  const sections = [...navLinks].map((link) => document.querySelector(link.getAttribute("href")));
+  const navLinks = [...document.querySelectorAll(".site-nav a")];
+  const sectionLinks = navLinks.filter((link) => link.getAttribute("href").startsWith("#"));
+  const sections = sectionLinks.map((link) => document.querySelector(link.getAttribute("href")));
   const navObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          navLinks.forEach((link) => {
+          sectionLinks.forEach((link) => {
             link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id);
           });
         }
@@ -129,7 +132,7 @@
     window.lucide.createIcons();
   }
 
-  if (window.twikoo) {
+  if (window.twikoo && document.querySelector("#tcomment")) {
     window.twikoo.init({
       envId: "https://twikoo.doufei.eu.org/",
       el: "#tcomment",
