@@ -1,0 +1,42 @@
+# 自动刷新 GitHub 3D 贡献图(profile-3d-contrib)
+# 定时任务只能从默认分支(main)触发;但站点由 gh-pages 分支提供,
+# 所以这里 checkout gh-pages、生成 SVG 后再提交回 gh-pages。
+name: profile-3d-contrib
+
+on:
+  schedule:
+    # 每天 UTC 18:30(北京时间次日 02:30)自动刷新一次
+    - cron: "30 18 * * *"
+  workflow_dispatch: {}
+
+# 允许用内置 GITHUB_TOKEN 推送提交
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-profile-3d-contrib
+    steps:
+      # 直接检出站点分支,生成物原地落到 profile-3d-contrib/
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - uses: yoshi389111/github-profile-3d-contrib@v0.9.2
+        env:
+          USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 仅当 SVG 有变化时才提交,避免空提交
+      - name: Commit & Push
+        run: |
+          if [[ -n "$(git status --porcelain profile-3d-contrib)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add profile-3d-contrib
+            git commit -m "chore: refresh profile-3d-contrib (自动更新 3D 贡献图)"
+            git push origin HEAD:gh-pages
+          else
+            echo "profile-3d-contrib 无变化,跳过提交。"
+          fi
