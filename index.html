@@ -28,44 +28,44 @@
       if (!window.__siteReady) document.documentElement.classList.remove("js");
     });
   </script>
-  <link rel="stylesheet" href="./assets/site.css?v=2">
-  <script src="./assets/site.js?v=2" defer></script>
+  <link rel="stylesheet" href="./assets/site.css?v=3">
+  <script src="./assets/site.js?v=3" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
 
   <!-- 图标：lucide (ISC) 与 GitHub mark (@primer/octicons, MIT)，按需内联，替代 400KB 的运行时 -->
-  <svg class="sprite" aria-hidden="true" focusable="false">
+  <svg class="sprite" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/></symbol>
-    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
-    <symbol id="i-external-link" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
-    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
-    <symbol id="i-cloud-download" viewBox="0 0 24 24"><path d="M12 13v8l-4-4"/><path d="m12 21 4-4"/><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"/></symbol>
-    <symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></symbol>
-    <symbol id="i-image-up" viewBox="0 0 24 24"><path d="M10.3 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10l-3.1-3.1a2 2 0 0 0-2.814.014L6 21"/><path d="m14 19.5 3-3 3 3"/><path d="M17 22v-5.5"/><circle cx="9" cy="9" r="2"/></symbol>
-    <symbol id="i-database-zap" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 15 21.84"/><path d="M21 5V8"/><path d="M21 12L18 17H22L19 22"/><path d="M3 12A9 3 0 0 0 14.59 14.87"/></symbol>
-    <symbol id="i-square-terminal" viewBox="0 0 24 24"><path d="m7 11 2-2-2-2"/><path d="M11 13h4"/><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></symbol>
-    <symbol id="i-file-pen-line" viewBox="0 0 24 24"><path d="M14.364 13.634a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506l4.013-4.009a1 1 0 0 0-3.004-3.004z"/><path d="M14.487 7.858A1 1 0 0 1 14 7V2"/><path d="M20 19.645V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l2.516 2.516"/><path d="M8 18h1"/></symbol>
-    <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></symbol>
-    <symbol id="i-bluetooth" viewBox="0 0 24 24"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></symbol>
-    <symbol id="i-workflow" viewBox="0 0 24 24"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></symbol>
-    <symbol id="i-brain-circuit" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M9 13a4.5 4.5 0 0 0 3-4"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M12 13h4"/><path d="M12 18h6a2 2 0 0 1 2 2v1"/><path d="M12 8h8"/><path d="M16 8V5a2 2 0 0 1 2-2"/><circle cx="16" cy="13" r=".5"/><circle cx="18" cy="3" r=".5"/><circle cx="20" cy="21" r=".5"/><circle cx="20" cy="8" r=".5"/></symbol>
-    <symbol id="i-blocks" viewBox="0 0 24 24"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"/><rect x="14" y="2" width="8" height="8" rx="1"/></symbol>
-    <symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></symbol>
-    <symbol id="i-rss" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></symbol>
-    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></symbol>
-    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
-    <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
-    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
-    <symbol id="i-zoom-in" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></symbol>
-    <symbol id="i-refresh-cw" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
-    <symbol id="i-message-square-text" viewBox="0 0 24 24"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/><path d="M7 11h10"/><path d="M7 15h6"/><path d="M7 7h8"/></symbol>
-    <symbol id="i-award" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-external-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+    <symbol id="i-cloud-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 13v8l-4-4"/><path d="m12 21 4-4"/><path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></symbol>
+    <symbol id="i-image-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10l-3.1-3.1a2 2 0 0 0-2.814.014L6 21"/><path d="m14 19.5 3-3 3 3"/><path d="M17 22v-5.5"/><circle cx="9" cy="9" r="2"/></symbol>
+    <symbol id="i-database-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 15 21.84"/><path d="M21 5V8"/><path d="M21 12L18 17H22L19 22"/><path d="M3 12A9 3 0 0 0 14.59 14.87"/></symbol>
+    <symbol id="i-square-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 11 2-2-2-2"/><path d="M11 13h4"/><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></symbol>
+    <symbol id="i-file-pen-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.364 13.634a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506l4.013-4.009a1 1 0 0 0-3.004-3.004z"/><path d="M14.487 7.858A1 1 0 0 1 14 7V2"/><path d="M20 19.645V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l2.516 2.516"/><path d="M8 18h1"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></symbol>
+    <symbol id="i-bluetooth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></symbol>
+    <symbol id="i-workflow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></symbol>
+    <symbol id="i-brain-circuit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M9 13a4.5 4.5 0 0 0 3-4"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M12 13h4"/><path d="M12 18h6a2 2 0 0 1 2 2v1"/><path d="M12 8h8"/><path d="M16 8V5a2 2 0 0 1 2-2"/><circle cx="16" cy="13" r=".5"/><circle cx="18" cy="3" r=".5"/><circle cx="20" cy="21" r=".5"/><circle cx="20" cy="8" r=".5"/></symbol>
+    <symbol id="i-blocks" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"/><rect x="14" y="2" width="8" height="8" rx="1"/></symbol>
+    <symbol id="i-graduation-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></symbol>
+    <symbol id="i-rss" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-zoom-in" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></symbol>
+    <symbol id="i-refresh-cw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+    <symbol id="i-message-square-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/><path d="M7 11h10"/><path d="M7 15h6"/><path d="M7 7h8"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></symbol>
   </svg>
 
-  <canvas class="signal-canvas" id="signalCanvas" aria-hidden="true"></canvas>
+  <canvas class="signal-canvas" id="signalCanvas" width="0" height="0" aria-hidden="true"></canvas>
 
   <header class="site-header" data-header>
     <div class="container header-inner">
@@ -74,15 +74,15 @@
         <span>doulongfei</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单">
-        <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
-        <svg class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg>
+        <svg width="1em" height="1em" class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg width="1em" height="1em" class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="主导航">
         <a href="#work">Projects</a>
         <a href="#stack">Stack</a>
         <a href="#proof">Proof</a>
         <a href="#contact">Contact</a>
-        <a href="https://doufei.eu.org/" target="_blank" rel="noopener">Blog <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+        <a href="https://doufei.eu.org/" target="_blank" rel="noopener">Blog <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
       </nav>
     </div>
   </header>
@@ -98,15 +98,15 @@
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="https://github.com/doulongfei" target="_blank" rel="noopener">
-              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+              <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-github"/></svg>
               GitHub
             </a>
             <a class="button button-secondary" href="https://doufei.eu.org/" target="_blank" rel="noopener">
-              <svg class="icon" aria-hidden="true"><use href="#i-rss"/></svg>
+              <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-rss"/></svg>
               技术博客
             </a>
             <a class="button button-ghost" href="mailto:2648142550@qq.com">
-              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+              <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
               Email
             </a>
           </div>
@@ -167,7 +167,7 @@
           <article class="project-card reveal" data-category="tooling">
             <div class="project-head">
               <span class="lang" data-lang="rust">Rust</span>
-              <svg class="icon project-icon" aria-hidden="true"><use href="#i-zap"/></svg>
+              <svg width="1em" height="1em" class="icon project-icon" aria-hidden="true"><use href="#i-zap"/></svg>
             </div>
             <h3>rust-clipboard-uploader</h3>
             <p>剪贴板图片上传工具的 Rust 版本，用更轻的运行时解决高频截图、上传、转链工作流。</p>
@@ -177,7 +177,7 @@
               <li>Automation</li>
             </ul>
             <div class="project-links">
-              <a class="text-link" href="https://github.com/doulongfei/rust-clipboard-uploader" target="_blank" rel="noopener">View repo<span class="sr-only">：rust-clipboard-uploader</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="text-link" href="https://github.com/doulongfei/rust-clipboard-uploader" target="_blank" rel="noopener">View repo<span class="sr-only">：rust-clipboard-uploader</span> <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
             </div>
           </article>
 
@@ -185,7 +185,7 @@
             <div class="project-head">
               <span class="lang" data-lang="go">Go</span>
               <span class="badge">Featured</span>
-              <svg class="icon project-icon" aria-hidden="true"><use href="#i-cloud-download"/></svg>
+              <svg width="1em" height="1em" class="icon project-icon" aria-hidden="true"><use href="#i-cloud-download"/></svg>
             </div>
             <h3>videoDownload</h3>
             <p>带 Web 界面的智能视频下载器，支持资源检测、M3U8/MP4 下载、实时进度和 REST API。</p>
@@ -195,15 +195,15 @@
               <li>REST API</li>
             </ul>
             <div class="project-links">
-              <a class="text-link" href="https://github.com/doulongfei/videoDownload" target="_blank" rel="noopener">Source<span class="sr-only">：videoDownload</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
-              <a class="text-link" href="https://git.doufei.eu.org/videoDownload/" target="_blank" rel="noopener">Demo<span class="sr-only">：videoDownload</span> <svg class="icon" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+              <a class="text-link" href="https://github.com/doulongfei/videoDownload" target="_blank" rel="noopener">Source<span class="sr-only">：videoDownload</span> <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="text-link" href="https://git.doufei.eu.org/videoDownload/" target="_blank" rel="noopener">Demo<span class="sr-only">：videoDownload</span> <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-external-link"/></svg></a>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="ai">
             <div class="project-head">
               <span class="lang" data-lang="python">Python</span>
-              <svg class="icon project-icon" aria-hidden="true"><use href="#i-bot"/></svg>
+              <svg width="1em" height="1em" class="icon project-icon" aria-hidden="true"><use href="#i-bot"/></svg>
             </div>
             <h3>awsClaudeApi</h3>
             <p>AWS Claude API 到 OpenAI API 格式的转换层，让支持 OpenAI 协议的工具接入 Claude 模型。</p>
@@ -213,14 +213,14 @@
               <li>OpenAI API</li>
             </ul>
             <div class="project-links">
-              <a class="text-link" href="https://github.com/doulongfei/awsClaudeApi" target="_blank" rel="noopener">View repo<span class="sr-only">：awsClaudeApi</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="text-link" href="https://github.com/doulongfei/awsClaudeApi" target="_blank" rel="noopener">View repo<span class="sr-only">：awsClaudeApi</span> <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="tooling">
             <div class="project-head">
               <span class="lang" data-lang="python">Python</span>
-              <svg class="icon project-icon" aria-hidden="true"><use href="#i-image-up"/></svg>
+              <svg width="1em" height="1em" class="icon project-icon" aria-hidden="true"><use href="#i-image-up"/></svg>
             </div>
             <h3>autoUploadClipboardImg</h3>
             <p>Windows 剪贴板图片自动上传工具，监听图片变化并自动上传到指定服务器，提高写作和协作效率。</p>
@@ -230,14 +230,14 @@
               <li>Upload</li>
             </ul>
             <div class="project-links">
-              <a class="text-link" href="https://github.com/doulongfei/autoUploadClipboardImg" target="_blank" rel="noopener">View repo<span class="sr-only">：autoUploadClipboardImg</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="text-link" href="https://github.com/doulongfei/autoUploadClipboardImg" target="_blank" rel="noopener">View repo<span class="sr-only">：autoUploadClipboardImg</span> <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="tooling">
             <div class="project-head">
               <span class="lang" data-lang="java">Java</span>
-              <svg class="icon project-icon" aria-hidden="true"><use href="#i-database-zap"/></svg>
+              <svg width="1em" height="1em" class="icon project-icon" aria-hidden="true"><use href="#i-database-zap"/></svg>
             </div>
             <h3>mybatis-sql-run</h3>
             <p>MyBatis XML SQL 入参模拟与执行工具，专注快速复现 SQL 映射问题和调试动态 SQL。</p>
@@ -247,14 +247,14 @@
               <li>SQL</li>
             </ul>
             <div class="project-links">
-              <a class="text-link" href="https://github.com/doulongfei/mybatis-sql-run" target="_blank" rel="noopener">View repo<span class="sr-only">：mybatis-sql-run</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="text-link" href="https://github.com/doulongfei/mybatis-sql-run" target="_blank" rel="noopener">View repo<span class="sr-only">：mybatis-sql-run</span> <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="tooling">
             <div class="project-head">
               <span class="lang" data-lang="powershell">PowerShell</span>
-              <svg class="icon project-icon" aria-hidden="true"><use href="#i-square-terminal"/></svg>
+              <svg width="1em" height="1em" class="icon project-icon" aria-hidden="true"><use href="#i-square-terminal"/></svg>
             </div>
             <h3>export-win</h3>
             <p>让 Windows 环境变量管理接近 Linux export 体验的 PowerShell 工具，面向命令行高频用户。</p>
@@ -264,14 +264,14 @@
               <li>CLI</li>
             </ul>
             <div class="project-links">
-              <a class="text-link" href="https://github.com/doulongfei/export-win" target="_blank" rel="noopener">View repo<span class="sr-only">：export-win</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="text-link" href="https://github.com/doulongfei/export-win" target="_blank" rel="noopener">View repo<span class="sr-only">：export-win</span> <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="web">
             <div class="project-head">
               <span class="lang" data-lang="html">HTML</span>
-              <svg class="icon project-icon" aria-hidden="true"><use href="#i-file-pen-line"/></svg>
+              <svg width="1em" height="1em" class="icon project-icon" aria-hidden="true"><use href="#i-file-pen-line"/></svg>
             </div>
             <h3>stackedit-dou</h3>
             <p>基于 StackEdit 的个人优化版本，面向 Markdown 写作、笔记同步和浏览器端编辑场景。</p>
@@ -281,15 +281,15 @@
               <li>Vercel</li>
             </ul>
             <div class="project-links">
-              <a class="text-link" href="https://github.com/doulongfei/stackedit-dou" target="_blank" rel="noopener">Source<span class="sr-only">：stackedit-dou</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
-              <a class="text-link" href="https://stackedit-dou.vercel.app" target="_blank" rel="noopener">Live<span class="sr-only">：stackedit-dou</span> <svg class="icon" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+              <a class="text-link" href="https://github.com/doulongfei/stackedit-dou" target="_blank" rel="noopener">Source<span class="sr-only">：stackedit-dou</span> <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="text-link" href="https://stackedit-dou.vercel.app" target="_blank" rel="noopener">Live<span class="sr-only">：stackedit-dou</span> <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-external-link"/></svg></a>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="web">
             <div class="project-head">
               <span class="lang" data-lang="python">Python</span>
-              <svg class="icon project-icon" aria-hidden="true"><use href="#i-server"/></svg>
+              <svg width="1em" height="1em" class="icon project-icon" aria-hidden="true"><use href="#i-server"/></svg>
             </div>
             <h3>pyapi</h3>
             <p>Python API 服务项目，用于快速沉淀接口能力和后端实验，已部署到 Vercel。</p>
@@ -299,14 +299,14 @@
               <li>Vercel</li>
             </ul>
             <div class="project-links">
-              <a class="text-link" href="https://pyapi-beryl.vercel.app" target="_blank" rel="noopener">Live<span class="sr-only">：pyapi</span> <svg class="icon" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+              <a class="text-link" href="https://pyapi-beryl.vercel.app" target="_blank" rel="noopener">Live<span class="sr-only">：pyapi</span> <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-external-link"/></svg></a>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="mobile">
             <div class="project-head">
               <span class="lang" data-lang="java">Java</span>
-              <svg class="icon project-icon" aria-hidden="true"><use href="#i-bluetooth"/></svg>
+              <svg width="1em" height="1em" class="icon project-icon" aria-hidden="true"><use href="#i-bluetooth"/></svg>
             </div>
             <h3>BluetoothBroadcast</h3>
             <p>Android 蓝牙广播应用，覆盖 APK 分享、5G Wi-Fi 支持检测和蓝牙连接信息读取。</p>
@@ -316,7 +316,7 @@
               <li>Java</li>
             </ul>
             <div class="project-links">
-              <a class="text-link" href="https://github.com/doulongfei/BluetoothBroadcast" target="_blank" rel="noopener">View repo<span class="sr-only">：BluetoothBroadcast</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+              <a class="text-link" href="https://github.com/doulongfei/BluetoothBroadcast" target="_blank" rel="noopener">View repo<span class="sr-only">：BluetoothBroadcast</span> <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
             </div>
           </article>
         </div>
@@ -348,22 +348,22 @@
 
         <div class="capability-grid">
           <article class="capability-card reveal" style="--tone: var(--amber)">
-            <span class="capability-icon"><svg class="icon" aria-hidden="true"><use href="#i-workflow"/></svg></span>
+            <span class="capability-icon"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-workflow"/></svg></span>
             <h3>Automation</h3>
             <p>围绕剪贴板、环境变量、签到、上传和工作区脚本，把重复操作变成工具链。</p>
           </article>
           <article class="capability-card reveal" style="--tone: var(--cyan)">
-            <span class="capability-icon"><svg class="icon" aria-hidden="true"><use href="#i-brain-circuit"/></svg></span>
+            <span class="capability-icon"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-brain-circuit"/></svg></span>
             <h3>AI/API</h3>
             <p>做过 Claude/OpenAI 协议转换、语音助手、代理服务和多端 API 实验。</p>
           </article>
           <article class="capability-card reveal" style="--tone: var(--violet)">
-            <span class="capability-icon"><svg class="icon" aria-hidden="true"><use href="#i-blocks"/></svg></span>
+            <span class="capability-icon"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-blocks"/></svg></span>
             <h3>Web Systems</h3>
             <p>熟悉静态站、Vercel、Cloudflare、后端接口、音乐/视频服务和评论系统整合。</p>
           </article>
           <article class="capability-card reveal" style="--tone: var(--coral)">
-            <span class="capability-icon"><svg class="icon" aria-hidden="true"><use href="#i-graduation-cap"/></svg></span>
+            <span class="capability-icon"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-graduation-cap"/></svg></span>
             <h3>Computer Science</h3>
             <p>持续维护数据结构、算法、SQL、Spring 与 Java 工程化练习。</p>
           </article>
@@ -383,10 +383,10 @@
           <article class="cert-card reveal">
             <a class="cert-thumb" href="./assets/img/cert-software-designer-1280.webp" data-lightbox data-caption="软件设计师 · 计算机技术与软件专业技术资格（中级）">
               <img src="./assets/img/cert-software-designer-640.webp" width="640" height="455" loading="lazy" decoding="async" alt="软件设计师证书">
-              <span class="cert-zoom"><svg class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg>查看大图</span>
+              <span class="cert-zoom"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg>查看大图</span>
             </a>
             <div class="cert-body">
-              <span class="cert-kind"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg>Qualification</span>
+              <span class="cert-kind"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-award"/></svg>Qualification</span>
               <h3>软件设计师</h3>
               <p>中国计算机技术职业资格，软考中级。</p>
             </div>
@@ -394,10 +394,10 @@
           <article class="cert-card reveal">
             <a class="cert-thumb" href="./assets/img/cert-database-1280.webp" data-lightbox data-caption="全国计算机等级考试 · 三级数据库技术">
               <img src="./assets/img/cert-database-640.webp" width="640" height="456" loading="lazy" decoding="async" alt="计算机三级数据库证书">
-              <span class="cert-zoom"><svg class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg>查看大图</span>
+              <span class="cert-zoom"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg>查看大图</span>
             </a>
             <div class="cert-body">
-              <span class="cert-kind"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg>Certification</span>
+              <span class="cert-kind"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-award"/></svg>Certification</span>
               <h3>数据库技术</h3>
               <p>全国计算机等级考试三级数据库技术。</p>
             </div>
@@ -420,23 +420,23 @@
             <ul class="contact-list">
               <li>
                 <a class="contact-item" href="mailto:2648142550@qq.com">
-                  <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                  <span class="contact-icon"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
                   <span class="contact-text"><strong>Email</strong><span>2648142550@qq.com</span></span>
                 </a>
                 <button class="copy-button" type="button" data-copy="2648142550@qq.com" aria-label="复制邮箱地址">
-                  <svg class="icon icon-copy" aria-hidden="true"><use href="#i-copy"/></svg>
-                  <svg class="icon icon-check" aria-hidden="true"><use href="#i-check"/></svg>
+                  <svg width="1em" height="1em" class="icon icon-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+                  <svg width="1em" height="1em" class="icon icon-check" aria-hidden="true"><use href="#i-check"/></svg>
                 </button>
               </li>
               <li>
                 <a class="contact-item" href="https://github.com/doulongfei" target="_blank" rel="noopener">
-                  <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></span>
+                  <span class="contact-icon"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-github"/></svg></span>
                   <span class="contact-text"><strong>GitHub</strong><span>@doulongfei</span></span>
                 </a>
               </li>
               <li>
                 <a class="contact-item" href="https://doufei.eu.org/" target="_blank" rel="noopener">
-                  <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-rss"/></svg></span>
+                  <span class="contact-icon"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-rss"/></svg></span>
                   <span class="contact-text"><strong>技术博客</strong><span>doufei.eu.org</span></span>
                 </a>
               </li>
@@ -444,12 +444,12 @@
           </aside>
 
           <div class="comment-shell reveal">
-            <p class="comment-title"><svg class="icon" aria-hidden="true"><use href="#i-message-square-text"/></svg>评论区</p>
+            <p class="comment-title"><svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-message-square-text"/></svg>评论区</p>
             <div class="comment-status" data-comment-status role="status">
               <span class="spinner" aria-hidden="true"></span>
               <span data-comment-message>滚动到这里时加载评论…</span>
               <button class="button button-ghost button-small" type="button" data-comment-retry hidden>
-                <svg class="icon" aria-hidden="true"><use href="#i-refresh-cw"/></svg>
+                <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-refresh-cw"/></svg>
                 重试
               </button>
             </div>
@@ -468,7 +468,7 @@
         <a href="https://github.com/doulongfei" target="_blank" rel="noopener">GitHub</a>
         <a href="https://doufei.eu.org/" target="_blank" rel="noopener">技术博客</a>
         <a href="mailto:2648142550@qq.com">Email</a>
-        <a href="#top" class="to-top">回到顶部 <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+        <a href="#top" class="to-top">回到顶部 <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
       </nav>
     </div>
   </footer>
@@ -476,7 +476,7 @@
   <dialog class="lightbox" data-lightbox-dialog aria-label="证书大图">
     <form method="dialog">
       <button class="lightbox-close" type="submit" aria-label="关闭大图">
-        <svg class="icon" aria-hidden="true"><use href="#i-x"/></svg>
+        <svg width="1em" height="1em" class="icon" aria-hidden="true"><use href="#i-x"/></svg>
       </button>
     </form>
     <figure>
