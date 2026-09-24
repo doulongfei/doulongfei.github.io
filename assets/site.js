@@ -65,6 +65,8 @@
   function initSignalCanvas() {
     var canvas = $("#signalCanvas");
     if (!canvas || reduceMotion.matches) return;
+    // 样式表没加载成功时 canvas 不是 fixed 背景，别把正文挤到下面去
+    if (getComputedStyle(canvas).position !== "fixed") return;
     var ctx = canvas.getContext("2d");
     if (!ctx) return;
 
