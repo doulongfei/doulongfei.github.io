@@ -16,7 +16,7 @@ certificates (lightbox), contact + Twikoo comments.
 - `assets/site.css` — styles, organised as tokens → base → layout → components → sections → motion → responsive
 - `assets/site.js` — progressive enhancement only (reveal animation, header/menu/scrollspy, project filter,
   live GitHub stats, lightbox, copy email, lazy Twikoo, background canvas)
-- `assets/img/` — optimised WebP certificate images (`-640` thumbnails, `-1280` lightbox) and `og-card.jpg`
+- `assets/img/` — optimised WebP certificate images (`-640` thumbnails, `-1280` lightbox), `og-card.jpg`, and the DF logo (`logo-64.webp` header mark, `logo-512.webp`, `favicon-32/48.png`, `apple-touch-icon.png`)
 - Twikoo 1.6.39 comments are loaded from npmmirror → jsDelivr → unpkg (in that order) with a pinned SRI hash, only when the comments section nears the viewport. It is not vendored: the bundle contains an example Tencent Cloud SecretId placeholder that GitHub push protection rejects. To upgrade, bump `TWIKOO_VERSION` and `TWIKOO_INTEGRITY` in `site.js`
 - `profile-3d-contrib/` — 3D contribution SVGs, regenerated daily by the workflow on `main` (do not edit by hand)
 - Original certificate files (`assets/*-certificate.jpg`) and README assets (`Bottom_*.svg`, header png, social svgs) are kept for reference / the README

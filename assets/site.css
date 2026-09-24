@@ -265,17 +265,11 @@ button {
 }
 
 .brand-mark {
-  display: inline-grid;
-  place-items: center;
   width: 32px;
   height: 32px;
-  color: var(--accent-ink);
-  background: var(--accent);
-  border-radius: 7px;
-  font-family: var(--font-mono);
-  font-size: 13px;
-  font-weight: 800;
-  text-transform: uppercase;
+  flex: none;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px var(--line-2), 0 0 18px -4px rgba(120, 110, 255, 0.55);
 }
 
 .site-nav {

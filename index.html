@@ -20,7 +20,9 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="doulongfei — Full-stack Developer / Open Source Builder">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23090b0d'/%3E%3Cpath d='M16 42V22h8l8 12 8-12h8v20h-8V30l-8 12-8-12v12h-8z' fill='%236dfcd5'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="./assets/img/favicon-48.png">
+  <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
   <!-- 先于样式表执行：标记 JS 可用；若 site.js 加载失败则在 load 时回退，保证内容始终可见 -->
   <script>
     document.documentElement.classList.add("js");
@@ -28,8 +30,8 @@
       if (!window.__siteReady) document.documentElement.classList.remove("js");
     });
   </script>
-  <link rel="stylesheet" href="./assets/site.css?v=3">
-  <script src="./assets/site.js?v=3" defer></script>
+  <link rel="stylesheet" href="./assets/site.css?v=4">
+  <script src="./assets/site.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
@@ -70,7 +72,7 @@
   <header class="site-header" data-header>
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="doulongfei 首页">
-        <span class="brand-mark" aria-hidden="true">df</span>
+        <img class="brand-mark" src="./assets/img/logo-64.webp" width="32" height="32" alt="">
         <span>doulongfei</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单">
@@ -490,6 +492,7 @@
       "@type": "Person",
       "name": "doulongfei",
       "jobTitle": "Full-stack Developer",
+      "image": "https://git.doufei.eu.org/assets/img/logo-512.webp",
       "url": "https://git.doufei.eu.org/",
       "sameAs": [
         "https://github.com/doulongfei",
